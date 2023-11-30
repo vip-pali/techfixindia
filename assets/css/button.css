@@ -1,0 +1,268 @@
+/*
+Theme Name: Spondtech
+Theme URI: https://ifingerstudio.com/spondtech/
+Author: https://themeforest.net/user/johanspond
+Author URI: https://ifingerstudio.com
+Support: johanspond@gmail.com
+Description: Spondtech - It Solution And Services WordPress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+*/
+
+/* CSS Index
+-----------------------------------
+newsletter*/
+
+
+/* 1. Theme default css
+============================================================*/
+:root {
+    --tg-body-font-family: 'DM Sans', sans-serif;
+    --tg-heading-font-family: 'Space Grotesk', sans-serif;
+    --tg-primary-color: #e8511f;
+    --tg-primary-color-two: #f2f6ff;
+    --tg-primary-color-three: #124ebb;
+    --tg-secondary-color: #02031f;
+    --tg-body-font-color: #676767;
+    --tg-heading-font-color: #1b1d21;
+    --tg-paragraph-color: #676767;
+    --tg-menu-color: #14133b;
+    --tg-section-background: #f9fbff;
+    --tg-section-background-two: #eef7ff;
+    --tg-section-background-three: #f4f4f4;
+    --tg-section-background-four: #fafafa;
+    --tg-body-font-size: 16px;
+    --tg-body-font-weight: 400;
+    --tg-heading-font-weight: 700;
+    --tg-body-line-height: 1.87;
+    --tg-heading-line-height: 1.2;
+    --tg-ghost-white: #f7fbff;
+    --tg-quote-color: #dcdfe5;
+    --tg-quote-color-two: #e5e5e5;
+    --tg-blog-meta-color: #6a6a6a;
+    --tg-lily-white: #e8faff;
+    --tg-widget-border-color: #d6d6d6;
+    --tg-widget-border-color-two: #efefef;
+    --tg-contact-border-color: #c8c8c8;
+    --tg-bright-turquoise: #17c7f8;
+    --tg-blue: #1c9cea;
+    --tg-blue-two: #4378e1;
+    --tg-blue-three: #14b9e9;
+    --tg-navy-blue: #082da3;
+    --tg-violets-blue: #816ef6;
+    --tg-zircon: #f4f7ff;
+    --tg-indigo: #6610f2;
+    --tg-purple: #b12aff;
+    --tg-purple-two: #e056fd;
+    --tg-magnolia: #fbf5ff;
+    --tg-pink: #ff0099;
+    --tg-red: #f9185d;
+    --tg-red-two: #ef162f;
+    --tg-blush: #fff7f9;
+    --tg-orange: #fb491a;
+    --tg-orange-two: #ff4d24;
+    --tg-sauvignon: #fff8f6;
+    --tg-yellow: #fabf1f;
+    --tg-yellow-two: #ecb40b;
+    --tg-yellow-three: #e1ab43;
+    --tg-yellow-four: #e29104;
+    --tg-island-spice: #fffaec;
+    --tg-green: #07e09b;
+    --tg-green-two: #22d361;
+    --tg-clear: #effffa;
+    --tg-teal: #20c997;
+    --tg-bubbles: #eafffb;
+    --tg-cyan: #f5f8ff;
+    --tg-white: #ffffff;
+    --tg-black: #1b1d21;
+    --tg-black-two: #010102;
+    --tg-rich-black: #071022;
+    --tg-gray: #dcdcdc;
+    --tg-gray-two: #ebf2ff;
+    --tg-gray-three: #d7d7d7;
+    --tg-gray-four: #f6f9ff;
+    --tg-gray-five: #c2c2c2;
+    --tg-gray-six: #f8f8f8;
+    --tg-gray-seven: #e1e1e1;
+    --tg-gray-eight: #646464;
+    --facebook: #1877f2;
+    --twitter: #1c9cea;
+    --instagram: #833ab4;
+    --linkedin: #0077b5;
+    --pinterest: #e60023;
+    --youtube: #c4302b;
+    --skype: #00aff0;
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    font-family: var(--tg-body-font-family);
+    font-weight: var(--tg-body-font-weight);
+    font-size: var(--tg-body-font-size);
+    line-height: var(--tg-body-line-height);
+    color: var(--tg-body-font-color);
+    font-style: normal;
+}
+img,
+.img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+.f-left {
+    float: left
+}
+.f-right {
+    float: right
+}
+.fix {
+    overflow: hidden
+}
+
+
+/*=============================
+    27. Newsletter
+===============================*/
+.newsletter-inner {
+    position: relative;
+    z-index: 1;
+    padding: 90px 60px 50px;
+    overflow: hidden;
+    top: 98%;
+}
+.newsletter-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+.newsletter-bg img {
+    position: absolute;
+    z-index: -2;
+}
+.newsletter-bg svg {
+    fill: var(--tg-primary-color);
+    fill-rule: evenodd;
+    width: 100%;
+}
+.newsletter-content .title {
+    font-size: 34px;
+    line-height: 1.47;
+    margin-bottom: 0;
+    color: var(--tg-white);
+}
+.newsletter-contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.newsletter-contact .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgb(255 255 255 / 40%);
+    color: var(--tg-white);
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 0;
+    margin-right: 20px;
+}
+.newsletter-contact .content span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--tg-white);
+    font-family: var(--tg-heading-font-family);
+    margin-bottom: 10px;
+}
+.newsletter-contact .content a {
+    color: var(--tg-white);
+    font-weight: 700;
+    font-size: 30px;
+    font-family: var(--tg-heading-font-family);
+    line-height: 1;
+}
+
+/* newsletter-two */
+.newsletter-bg-two {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+}
+.newsletter-content-two span {
+    display: block;
+    font-size: 22px;
+    color: var(--tg-white);
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.newsletter-content-two .title {
+    margin-bottom: 0;
+    font-size: 50px;
+    color: var(--tg-white);
+}
+.contact-btn .btn {
+    background: var(--tg-white);
+    color: var(--tg-primary-color);
+}
+.contact-btn .btn.btn-two span::before {
+    background: var(--tg-primary-color);
+}
+.contact-btn .btn.btn-two:hover > span::after {
+    background: var(--tg-white);
+}
+.contact-btn .btn::after {
+    background: var(--tg-secondary-color);
+}
+.contact-btn .btn::before {
+    background: var(--tg-primary-color);
+}
+.contact-btn .btn:hover::before {
+    background: var(--tg-white);
+}
+.contact-btn .btn:hover {
+    color: var(--tg-white);
+}
+.newsletter-bg-two .newsletter-shape {
+    position: absolute;
+    right: 11%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.newsletter-bg-two .newsletter-shape img {
+    animation: alltuchtopdown 4s infinite linear;
+}
+@keyframes alltuchtopdown {
+    0% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotateX(0deg) translateY(-25px);
+    }
+
+    100% {
+        transform: rotateX(0deg) translateY(0px);
+    }
+}
+
+/* .newsletter-area-three {
+    margin-bottom: -225px;
+    z-index: 1;
+}
+
+.newsletter-area-four {
+    margin-bottom: -30px;
+} */
+
+
